@@ -1,3 +1,5 @@
+@import "compass/CSS3";
+
 $cafe: #453b31 ;
 $crema: #e8c79c;
 $cremados: #e4cfb2;
@@ -8,11 +10,13 @@ header{
 	color: $crema;
 	h1{
 		font-family: 'Libre Baskerville', serif;
-		font-weight: normal !important;
+		font-weight: 300 !important;
 		color: $crema;
 		font-size: 3.5em;
 		text-align: right;
 		margin: 0;
+		text-shadow: 0 1px 1px $cafe;
+
 	}
 	p{
 		text-align: right;
@@ -79,6 +83,7 @@ nav{
 			font-size: 1.3em;
 			a{
 				color: $crema;
+				text-shadow: 0 1px 1px $cafe - 90;
 				&:hover{
 					color: $crema + 50;
 				}
@@ -89,8 +94,8 @@ nav{
 }
 
 .container{
-	padding: 0 0 0 1.2em;
-	height: 430px;
+	padding: 0 0 0 1.8em;
+	height: 380px;
 	overflow: hidden;
 	   p{
 	   	color: $cafe;
@@ -98,6 +103,43 @@ nav{
 
 }
 
+.half{
+	width: 49% !important;
+	display: inline-block;
+	margin: 0;
+	&:first-child{
+		margin-right: 2%;
+	}
+}
+
+form{
+	input{
+	font-size: 1em;
+	padding: 1em;
+	border: 1px solid #dcdcdc;
+	display: inline-block !important;
+	margin: .3em 0;
+	font-weight: 400;
+	color: #616161;
+	display: block;
+	background-color: #f3f3f3;
+	@include transition-property(all);
+	@include transition-duration(.4s);
+	@include transition-timing-function(ease-in);
+		&:focus{
+			outline:none;
+			@include box-shadow($cafe + 100 0 0 5px); 
+			border: 1px solid $cafe;
+			background-color: white;
+			}
+		}
+
+	textarea{
+		@extend input;
+		height: 150px !important;
+	}
+
+}
 
 .ng-enter {
 	transition: all 1s ease;
