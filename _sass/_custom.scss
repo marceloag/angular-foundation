@@ -1,0 +1,110 @@
+$cafe: #453b31 ;
+$crema: #e8c79c;
+$cremados: #e4cfb2;
+
+header{
+	background-color: $cafe;
+	padding: 1.5em 1.5em 0 1.5em;
+	color: $crema;
+	h1{
+		font-family: 'Libre Baskerville', serif;
+		font-weight: normal !important;
+		color: $crema;
+		font-size: 3.5em;
+		text-align: right;
+		margin: 0;
+	}
+	p{
+		text-align: right;
+		color: $cremados;
+		font-size: 1.2em;
+		line-height: 1.8em;
+		margin-top: 1em;
+	}
+}
+h2{
+	font-family: 'Libre Baskerville', serif;
+	color: $cafe;
+}
+
+.logo{
+	margin-top: 1em;
+}
+
+.indice{
+	margin-top: 1em;
+	padding-left: 1em;
+	background-image:url("images/bgsillahalf.jpg");
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: 38%;
+	height: 430px; 
+	overflow: hidden;
+	position: relative;
+	p{
+		font-size: 1.7em;
+		font-family: 'Libre Baskerville', serif;
+		text-align: right;
+		font-weight: lighter;
+		margin-top: 3em;
+	}
+}
+
+.full{
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
+nav{
+	background-color: $cafe;
+	padding-bottom: 0;
+	ul{
+		margin: 0;
+		li{
+			list-style: none;
+			display: inline-block;
+			color: $crema;
+			font-family: 'Libre Baskerville', serif;
+			padding: 0 .8em;
+			font-size: 1.3em;
+			a{
+				color: $crema;
+				&:hover{
+					color: $crema + 50;
+				}
+			}
+
+		}
+	}
+}
+
+.container{
+	padding: 0 0 0 1.2em;
+	height: 430px;
+	overflow: hidden;
+	   p{
+	   	color: $cafe;
+	   }
+
+}
+
+
+.ng-enter {
+	transition: all 1s ease;
+    opacity: 0;
+}
+.ng-enter-active {
+	transition: all 1s ease;
+    opacity: 1;
+}
+.ng-leave {
+    opacity: 1;
+}
+.ng-leave-active {
+	transition: all 1s ease;
+    opacity: 0;
+}
+
+// ng-animate
