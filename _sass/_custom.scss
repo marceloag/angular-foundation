@@ -100,7 +100,16 @@ nav{
 	   p{
 	   	color: $cafe;
 	   }
-
+}
+.containerslider{
+	padding: 0;
+	margin: 0;
+	height: 380px;
+	overflow: hidden;
+	background-color: white;
+	   p{
+	   	color: $cafe;
+	   }
 }
 
 .half{
@@ -158,3 +167,7 @@ form{
 }
 
 // ng-animate
+
+.elorbit{
+	height: 430px;
+}

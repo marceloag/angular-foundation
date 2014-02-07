@@ -14,7 +14,16 @@ app.
 		 when("/catalogo",{templateUrl:"/secciones/catalogo.html"}).
 		 when("/contacto",{templateUrl:"/secciones/contacto.html"}).
 		 when("/atilio-cum",{templateUrl:"/secciones/atilio-cum.html"})
-	});
+	})	
+	.run(function($rootScope) {
+    $rootScope.$on('$viewContentLoaded', function () {
+      $(document).foundation();
+    	});
+  	});
+
+
+
+
 
 
 function maincontroller($scope){
