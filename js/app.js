@@ -17,7 +17,7 @@ app.
 	})	
 	.run(function($rootScope) {
     $rootScope.$on('$viewContentLoaded', function () {
-      $(document).foundation();
+      $(document).foundation('orbit',{slide_number: false,timer_speed: 5000});
     	});
   	});
 
