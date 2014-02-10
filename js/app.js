@@ -18,6 +18,9 @@ app.
 	.run(function($rootScope) {
     $rootScope.$on('$viewContentLoaded', function () {
       $(document).foundation('orbit',{slide_number: false,timer_speed: 5000});
+      $(document).ready(function() {
+	   $('#foo0').carouFredSel();
+		}); //Termina Carrou
     	});
   	});
 

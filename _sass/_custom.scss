@@ -192,3 +192,46 @@ form{
 		font-weight: 200;
 	}
 }
+
+// Carrusel
+.list_carousel {
+	margin: 0;
+	width: 100%;
+		ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: block;
+		}
+		li {
+				color: #999;
+				text-align: center;
+				border: 0 solid #999;
+				width: 320px;
+				height: 400px;
+				padding: 0;
+				margin: 6px;
+				display: block;
+				float: left;
+				img{
+					width: 88%;
+				}
+			}
+}
+.caroufredsel_wrapper{
+	width: 100% !important;
+	height: 400px !important;
+}
+
+			.clearfix {
+				float: none;
+				clear: both;
+			}
+			.prev {
+				float: left;
+				margin-left: 10px;
+			}
+			.next {
+				float: right;
+				margin-right: 10px;
+			}
