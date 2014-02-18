@@ -19,7 +19,18 @@ app.
     $rootScope.$on('$viewContentLoaded', function () {
       $(document).foundation('orbit',{slide_number: false,timer_speed: 5000});
       $(document).ready(function() {
-	   $('#foo0').carouFredSel();
+	   $('#foo0').carouFredSel(
+			{
+		        items               : 2,
+		        direction           : "left",
+		        scroll : {
+		            items           : 1,
+		            easing          : "elastic",
+		            duration        : 1000,                         
+		            pauseOnHover    : true
+		        }                   
+		    }
+    	);
 		}); //Termina Carrou
     	});
   	});
