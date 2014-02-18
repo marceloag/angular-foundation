@@ -26,7 +26,7 @@ app.
 		        scroll : {
 		            items           : 1,
 		            easing          : "elastic",
-		            duration        : 500,                         
+		            duration        : 1000,                         
 		            pauseOnHover    : true
 		        }                   
 		    }
