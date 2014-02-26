@@ -93,11 +93,12 @@ nav{
 			display: inline-block;
 			color: $crema;
 			font-family: 'Baskerville', serif;
-			padding: 0 .6em;
+			padding: 0 .8em;
 			font-size: 1.5em;
 			a{
 				color: $crema;
 				text-shadow: 0 1px 1px $cafe - 90;
+				letter-spacing: 2px;
 				&:hover{
 					color: $crema + 50;
 				}
