@@ -119,6 +119,18 @@ nav{
 		line-height: 1.2em;
 	   }
 }
+.contenedor{
+	padding: 0 0 0 1.8em;
+	height: 380px;
+	overflow: hidden;
+	background-color: white;
+	   p{
+	   	color: $cafe !important;
+	   	font-size: 1em;
+		line-height: 1.5em;
+	   }
+}
+
 .containerslider{
 	padding: 0;
 	margin: 0;
