@@ -3,7 +3,6 @@
 $destino="web@croop.cl";
 
 $nombre =$_GET['nombre'];
-$apellido=$_GET['apellido'];
 $email=$_GET['email'];
 $telefono=$_GET['telefono'];
 $comentario=$_GET['comentario'];
@@ -24,12 +23,11 @@ function enviarmail($email,$nombre,$apellido,$telefono,$comentario,$destino){
 		$body='
 			
 			Nombre: '.$nombre.' <br>
-			Apellido: '.$apellido.'<br>
 			Email: '.$email.'<br>
 			Telefono:'.$telefono.'<br>
 			Comentario:'.$comentario.'<br>
 <br><br>
-			Mensaje enviado desde interser.cl
+			Mensaje enviado desde atiliocum.cl
 
 		';
 

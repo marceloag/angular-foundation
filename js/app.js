@@ -45,7 +45,7 @@ app.
 
       	frm=$('#contactform');
 	  	$('.sendbutton').click(function(){
-	  		alert(":C");
+	  		// alert(":C");
 	  		datos=frm.serialize();
 	  		$.ajax({
 	            type: frm.attr('method'),
