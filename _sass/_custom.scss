@@ -261,6 +261,23 @@ a.orbit-next, a.orbit-prev{
 				}
 			}
 }
+a.next, a.prev{
+	display: block !important;
+	padding: .3em;
+	// width: 1.6em;
+	font-size: .8em;
+	// @include border-radius(50%);
+	background-color: $cafe !important;
+	color: white;
+	text-align: center;
+	z-index: 9999;
+	position: absolute;
+	font-family: 'Open Sans';
+}
+
+.next{
+	left: 5em;
+}
 .caroufredsel_wrapper{
 	width: 100% !important;
 	height: 400px !important;

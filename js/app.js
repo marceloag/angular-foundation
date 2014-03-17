@@ -28,7 +28,17 @@ app.
 		            easing          : "elastic",
 		            duration        : 1000,                         
 		            pauseOnHover    : true
-		        }                   
+		        },
+		        prev: {
+				    button: function() {
+				        return $(this).parent().siblings(".prev");
+				        }
+				    },
+				next: {
+				    button: function() {
+				        return $(this).parent().siblings(".next");
+				        }
+				    }                   
 		    }
     	);
 		}); //Termina Carrou
