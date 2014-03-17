@@ -49,7 +49,7 @@ function enviarmail($email,$nombre,$apellido,$telefono,$comentario,$destino){
 		$mail->SMTPSecure = "tls";
 
 		$mail->Username = "noreply@atiliocum.cl";
-		$mail->Password = "acum159"; 
+		$mail->Password = "cum159"; 
 
 		if(!$mail->Send()) {
 		echo "Mailer Error: " . $mail->ErrorInfo;
