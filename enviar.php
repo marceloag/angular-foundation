@@ -1,6 +1,6 @@
 <?php
 
-$destino="contacto@atiliocum.cl";
+$destino="web@croop.cl";
 
 $nombre =$_GET['nombre'];
 $apellido=$_GET['apellido'];
