@@ -42,6 +42,21 @@ app.
 		    }
     	);
 		}); //Termina Carrou
+
+      	frm=$('#contactform');
+	  	$('.sendbutton').click(function(){
+	  		datos=frm.serialize();
+	  		$.ajax({
+	            type: frm.attr('method'),
+	            url: 'enviar.php',
+	            data: frm.serialize(),
+	            success: function (data) {
+	                $('#contactform').hide("slow");
+	                $('.fcontacto').html(data);
+	            }
+	        });
+	  	});
+
     	});
   	});
 
