@@ -1,0 +1,5 @@
+.codekit-cache/*
+.sass-cache/*
+webfont/*
+config.codekit
+humans.txt
