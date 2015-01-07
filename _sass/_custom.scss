@@ -1,297 +1,43 @@
 @import "compass/CSS3";
+@import "animate";
 
-$cafe: #453b31 ;
-$crema: #e8c79c;
-$cremados: #e4cfb2;
-
-@font-face {
-    font-family: 'Baskerville';
-    src: url('../webfont/baskvill-webfont.eot');
-    src: url('../webfont/baskvill-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../webfont/baskvill-webfont.woff') format('woff'),
-         url('../webfont/baskvill-webfont.ttf') format('truetype'),
-         url('../webfont/baskvill-webfont.svg#baskerville_old_faceregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
-header{
-	background-color: $cafe;
-	padding: 1.5em 1.5em 0 1.5em;
-	color: $crema;
-	h1{
-		font-family: 'Baskerville', serif;
-		font-weight: 300 !important;
-		color: $crema;
-		font-size: 5em;
-		text-align: right;
-		margin: 0 !important;
-		padding: 0 !important;
-		text-shadow: 0 1px 1px $cafe;
-
-	}
-	p{
-		text-align: right;
-		color: $cremados;
-		font-size: 1em;
-		line-height: 1.8em;
-		// margin-top: .2em;
-	}
-}
-h2{
-	font-family: 'Baskerville', serif;
-	color: $cafe;
+body{
+	background-color: #e4e2e3;
 }
 
-.logo{
-	margin-top: 1em;
-}
-
-.indice{
-	margin-top: 1em;
-	padding-left: 1em;
-	background-image:url("images/bgsillahalf.jpg");
-	background-repeat: no-repeat;
-	background-position: top right;
-	background-size: 33%;
-	height: 440px; 
-	overflow: hidden;
-	position: relative;
-
-}
-
-.homeimg{
-	padding-top: 2em;
-}
-.home{
-
-	p{
-		font-size: 1.7em;
-		font-family: 'Baskerville', serif;
-		text-align: right;
-		font-weight: lighter;
-		margin-top: 3em;
-	}
-}
-
-.full{
-   width: 100%;
-   margin-left: auto;
-   margin-right: auto;
-   max-width: initial;
-}
-
-
-nav{
-	background-color: $cafe;
-	padding-bottom: 0;
-	ul{
-		margin: 0;
-		li{
-			list-style: none;
-			display: inline-block;
-			color: $crema;
-			font-family: 'Baskerville', serif;
-			padding: 0 .8em;
-			font-size: 1.5em;
-			a{
-				color: $crema;
-				text-shadow: 0 1px 1px $cafe - 90;
-				letter-spacing: 2px;
-				&:hover{
-					color: $crema + 50;
-				}
-			}
-
+.mainmenu{
+	li{
+		list-style: none;
+		display: inline-block;
+		a{
+			padding: 1em;
 		}
 	}
 }
 
-.container{
-	padding: 0 0 0 1.8em;
-	height: 380px;
-	overflow: hidden;
-	background-color: white;
-	   p{
-	   	color: $cafe;
-	   	font-size: 2.2em;
-		line-height: 1.2em;
-	   }
-}
-.contenedor{
-	padding: 0 0 0 1.8em;
-	height: 380px;
-	overflow: hidden;
-	background-color: white;
-	   p{
-	   	color: $cafe !important;
-	   	font-size: 1em;
-		line-height: 1.5em;
-		text-align: justify;
-	   }
-}
-.pdos{
-	margin-top: 1em;
-	padding-top: 1em;
-}
-.ptres{
-	margin-left: -2em;
-}
-.containerslider{
-	padding: 0;
-	margin: 0;
-	height: 400px;
-	overflow: hidden;
-	background-color: white;
-	   p{
-	   	color: $cafe;
-	   	font-size: 1.5em;
-	   }
-}
 
-.half{
-	width: 49% !important;
-	display: inline-block;
-	margin: 0;
-	&:first-child{
-		margin-right: 2%;
-	}
-}
-
-form{
-	input{
-	font-size: 1em;
-	padding: 1em;
-	border: 1px solid #dcdcdc;
-	display: inline-block !important;
-	margin: .3em 0;
-	font-weight: 400;
-	color: #616161;
-	display: block;
-	background-color: #f3f3f3;
-	@include transition-property(all);
-	@include transition-duration(.4s);
-	@include transition-timing-function(ease-in);
-		&:focus{
-			outline:none;
-			@include box-shadow($cafe + 100 0 0 5px); 
-			border: 1px solid $cafe;
-			background-color: white;
-			}
-		}
-
-	textarea{
-		@extend input;
-		height: 150px !important;
-	}
-
-}
+// Animation
 
 .ng-enter {
-	transition: all 1s ease;
-    opacity: 0;
+	@extend .animated;
+    -webkit-animation-name: fadeInUp;
+  	animation-name: fadeInUp;
 }
 .ng-enter-active {
-	transition: all 1s ease;
-    opacity: 1;
+	@extend .animated;
+    -webkit-animation-name: fadeInUp;
+  	animation-name: fadeInUp;
 }
 .ng-leave {
-    opacity: 1;
+	opacity: 1;
 }
 .ng-leave-active {
-	transition: all 1s ease;
-    opacity: 0;
+	opacity: 0;
 }
-
-// ng-animate
-
-.elorbit{
-	background-color: white;
-	height: 430px;
-}
-.orbit-bullets{
-	display: none;
-}
-
-.catalogo{
-	h3{
-		margin: 0;
-		padding: 0;
-		text-align: center;
-		font-size: 1.3em;
-	}
-	span{
-		display: block;
-		text-align: center;
-		font-size: 1.3em;
-		font-family: 'Open Sans';
-		font-weight: 200;
-	}
-}
-
-.orbit-progress{
-	display: none !important;
-}
-a.orbit-next, a.orbit-prev{
-	display: none !important;
-}
-// Carrusel
-.list_carousel {
-	margin: 0;
-	width: 100%;
-		ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		display: block;
-		}
-		li {
-				color: #999;
-				text-align: center;
-				border: 0 solid #999;
-				width: 320px;
-				height: 400px;
-				padding: 0;
-				margin: 6px;
-				display: block;
-				float: left;
-				img{
-					width: 88%;
-				}
-			}
-}
-a.next, a.prev{
-	display: block !important;
-	padding: .3em;
-	// width: 1.6em;
-	font-size: .8em;
-	// @include border-radius(50%);
-	background-color: $cafe !important;
-	color: white;
-	text-align: center;
-	z-index: 9999;
-	position: absolute;
-	font-family: 'Open Sans';
-}
-
-.next{
-	left: 5em;
-}
-.caroufredsel_wrapper{
-	width: 100% !important;
-	height: 400px !important;
-}
-
-			.clearfix {
-				float: none;
-				clear: both;
-			}
-			.prev {
-				float: left;
-				margin-left: 10px;
-			}
-			.next {
-				float: right;
-				margin-right: 10px;
-			}

@@ -1,19 +1,12 @@
-// angular.module('cum',['ngRoute', 'ngAnimate']).
-// 	config(function $routeProvider{
-// 		 $routeProvider.
-// 		 when("/",{templateUrl:"/secciones/main.html"})
-// 	})
-
-var app = angular.module('cum', ['ngRoute', 'ngAnimate']);
+var app = angular.module('angfd', ['ngRoute', 'ngAnimate']);
 
 app.
 	config(function ($routeProvider){
 		 $routeProvider.
 		 when("/",{templateUrl:"/secciones/main.html", controller: "maincontroller"}).
-		 when("/muebleria",{templateUrl:"/secciones/muebleria.html"}).
-		 when("/catalogo",{templateUrl:"/secciones/catalogo.html"}).
-		 when("/contacto",{templateUrl:"/secciones/contacto.html"}).
-		 when("/atilio-cum",{templateUrl:"/secciones/atilio-cum.html"})
+		 when("/quienes-somos",{templateUrl:"/secciones/quienes-somos.html"}).
+		 when("/servicios",{templateUrl:"/secciones/servicios.html"}).
+		 when("/contacto",{templateUrl:"/secciones/contacto.html"})
 	})	
 	.run(function($rootScope) {
     $rootScope.$on('$viewContentLoaded', function () {
@@ -61,12 +54,7 @@ app.
     	});
   	});
 
-
-
-
-
-
 function maincontroller($scope){
-	$scope.person ={name: "Jonathan"};
+	// $scope.person ={name: "Jonathan"};
 }
 

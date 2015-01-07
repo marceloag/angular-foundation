@@ -6,9 +6,8 @@
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Atilio Cum Mueblería</title>
+  <title>Titulo</title>
   <link rel="stylesheet" href="./app.css">
-  <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <script src="js/vendor/custom.modernizr.js"></script>
   <script>
@@ -28,37 +27,29 @@
 <body>
 
 <header>
-	<div class="row full">
+	<div class="row collapse">
 		<div class="large-3 columns logo">
-			<a href="/#"><img src="images/logo.png" alt="Atilio Cum"></a>
+			<img src="http://fakeimg.pl/350x200/00CED1/FFF/?text=img+placeholder">
 		</div>
-		<div class="large-4 columns right">
-			<h1>atilio cum</h1>
-			<p>
-				Maipú 553, Punta Arenas, Chile <br>
-				Fono: +56-61-2225140<br>
-				contacto@atiliocum.cl<br>
-				<i class="fa fa-facebook-square"></i> <a href="https://www.facebook.com/pages/Muebler%C3%ADa-Atilio-Cum/1402203953351386?fref=ts" style="color:#e4cfb2;text-decoration:none;">MuebleriaAtilioCum</a>
-			</p>
+		<div class="large-5 columns right">
+			<nav>
+				<ul class="mainmenu">
+					<li><a href="#/">Inicio</a></li>
+					<li><a href="#/quienes-somos">Quienes Somos</a></li>
+					<li><a href="#/servicios">Servicio</a></li>
+					<li><a href="#/contacto">Contacto</a></li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </header>
-<nav>
-	<div class="row full">
-		<div class="large-6 columns right">
-			<ul>
-				<li><a href="/#/atilio-cum">Atilio Cum </a></li>
-				<li><a href="/#/muebleria">Mueblería </a></li>
-				<li><a href="/#/catalogo">Catálogo </a></li>
-				<li><a href="/#/contacto">Contacto </a></li>
-			</ul>
-		</div>
-	</div>
-</nav>
 
-<section class="main" ng-app="cum" ng-controller="maincontroller">
+
+<section class="main" ng-app="angfd" ng-controller="maincontroller">
 	<div class="row full">
-			<div ng-view class="slide"></div>
+			<div ng-view>
+				
+			</div>
 	</div>	
 </section>
 
